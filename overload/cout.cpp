@@ -49,6 +49,7 @@ int main()
     cout << "Hello, World!" << endl;
 
     point myP;
-    cout <<"server:"<< myP << endl;
-    //cout <<"server:"<< (point)myP << endl;
+	operator<<(cout, (point&)myP);
+    cout <<endl<<"server:"<< myP << endl;
+    cout <<"server:"<< (point&)myP << endl;
 }
